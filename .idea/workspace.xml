@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="028a7bbb-1d24-4b7f-a7b3-b214e552a730" name="Changes" comment="Primer commit">
-      <change afterPath="$PROJECT_DIR$/src/Geometria3D/Cilindro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Geometria3D/Cono.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Geometria3D/Cubo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Geometria3D/Piramide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Geometria3D/Prisma.java" afterDir="false" />
+    <list default="true" id="028a7bbb-1d24-4b7f-a7b3-b214e552a730" name="Changes" comment="Add class esfera">
+      <change afterPath="$PROJECT_DIR$/src/Geometria2D/Endecagono.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Geometria2D/Circulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria2D/Circulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Geometria2D/Cuadrado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria2D/Cuadrado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Geometria2D/Decagono.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria2D/Decagono.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Geometria2D/Heptagono.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria2D/Heptagono.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Geometria2D/Hexagono.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria2D/Hexagono.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Geometria2D/Nonagono.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria2D/Nonagono.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Geometria2D/Octagono.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria2D/Octagono.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Geometria2D/Pentagono.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria2D/Pentagono.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Geometria2D/Triangulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria2D/Triangulo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +62,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670944844351</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Primer commit">
+      <created>1670945121182</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670945121182</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add class esfera">
+      <created>1670945175304</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670945175304</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -72,6 +92,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primer commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primer commit" />
+    <MESSAGE value="Add class esfera" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add class esfera" />
   </component>
 </project>
