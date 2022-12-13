@@ -1,0 +1,65 @@
+package Geometria3D;
+
+public class Cilindro {
+    double radio;
+    double altura;
+    public Cilindro() {
+        radio = 0;
+        altura = 0;
+    }
+    public double calcularAT(double rad, double alt) {
+        return ((2* Math.PI*rad)*(alt*rad));
+    }
+    public double calcularVol(double rad, double alt) {
+        return ((Math.PI*Math.pow(rad,2))*alt);
+    }
+    public double calcularAL(double rad, double alt) {
+        return (2*Math.PI*rad*alt);
+    }
+}
+
+
+
+package Geometria3D;
+
+public class Cono {
+    double radio;
+    double altura;
+    double generatriz;
+    public Cono() {
+        radio = 0;
+        altura = 0;
+        generatriz = 0;
+    }
+    public double calcularAreaTot(double rad, double gen) {
+        return ((Math.PI*rad*gen)+(Math.PI*Math.pow(rad,2)));
+    }
+    public double calcularVol(double rad, double alt) {
+        return ((Math.PI*alt*Math.pow(Math.PI,2))/3);
+    }
+    public double calcularAL(double rad, double gen) {
+        return (Math.PI*rad*gen);
+    }
+}
+
+
+
+
+package Geometria3D;
+
+public class Cubo {
+    double lado;
+    public Cubo() {
+        lado = 0;
+    }
+    public double calcularArea(double lad) {
+        return (Math.pow(lad,3));
+    }
+    public double calcularVol(double lad) {
+        return (6*Math.pow(lad,2));
+    }
+    public double calcularDgM(double lad) {
+        return (lad*Math.sqrt(3));
+    }
+}
+
