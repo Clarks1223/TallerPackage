@@ -2,13 +2,18 @@ package Geometria2D;
 
 public class Circulo {
     double radio;
-    double diametro;
-    double area;
-    double perimetro;
     public Circulo(){
         radio=0;
-        diametro=0;
-        area=0;
-        perimetro=0;
     }
+    public double CalcArea(double rad){
+        return Math.PI*Math.pow(rad,2);
+    }
+
+    public double CalcPEr(double rad){
+        return 2*Math.PI*rad;
+    }
+    public double CalDiam(double rad){
+        return 2*(rad);
+    }
+
 }
