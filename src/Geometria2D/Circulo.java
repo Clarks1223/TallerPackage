@@ -1,11 +1,17 @@
 package Geometria2D;
 
 public class Circulo {
-    double radio;
+    double area;
     public Circulo(){
-        radio=0;
+        area=0;
     }
-    public double CalcArea(double rad){
+
+    public double getArea(double rad) {
+        area=CalcArea(rad);
+        return area;
+    }
+
+    private double CalcArea(double rad){
         return Math.PI*Math.pow(rad,2);
     }
 

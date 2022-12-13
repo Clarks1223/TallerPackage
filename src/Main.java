@@ -7,10 +7,12 @@ public class Main {
     static DecimalFormat dcf= new DecimalFormat("#.00");
     public static void main(String[] args) {
         Geometria2D.Hexagono figura = new Geometria2D.Hexagono();
-
+        Geometria2D.Circulo fig=new Geometria2D.Circulo();
         double var;
-        System.out.print("Ingrese un valor: ");
+        System.out.print("Ingrese el radio: ");
         var=sc.nextDouble();
-        System.out.println("El area es: "+dcf.format(figura.CalcArea(var)));
+        System.out.println(fig.getArea(var));
+/*        System.out.println("El area es: "+dcf.format(figura.CalcArea(var)));*/
     }
+
 }

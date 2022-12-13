@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="028a7bbb-1d24-4b7f-a7b3-b214e552a730" name="Changes" comment="Finish package Geometria 2D">
+    <list default="true" id="028a7bbb-1d24-4b7f-a7b3-b214e552a730" name="Changes" comment="add main Scanner and DecimalFormat">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Geometria2D/Circulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria2D/Circulo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Geometria2D/Cuadrado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria2D/Cuadrado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Geometria2D/Heptagono.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria2D/Heptagono.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Geometria2D/Hexagono.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria2D/Hexagono.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Geometria2D/Pentagono.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria2D/Pentagono.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Geometria2D/Triangulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria2D/Triangulo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670946490328</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add main Scanner and DecimalFormat">
+      <created>1670950691007</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670950691007</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +100,7 @@
     <MESSAGE value="Primer commit" />
     <MESSAGE value="Add class esfera" />
     <MESSAGE value="Finish package Geometria 2D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish package Geometria 2D" />
+    <MESSAGE value="add main Scanner and DecimalFormat" />
+    <option name="LAST_COMMIT_MESSAGE" value="add main Scanner and DecimalFormat" />
   </component>
 </project>
