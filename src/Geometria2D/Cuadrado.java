@@ -1,18 +1,36 @@
 package Geometria2D;
 
 public class Cuadrado {
-    double lado;
+    double area, perimetro, diagonal;
     public Cuadrado(){
-        lado=0;
+        area=0;
+        perimetro=0;
+        diagonal=0;
     }
-    public double CalcArea(double lad){
+
+    public double getArea(double lad) {
+        area=CalcArea(lad);
+        return area;
+    }
+
+    public double getPerimetro(double lad) {
+        perimetro=CalcPer(lad);
+        return perimetro;
+    }
+
+    public double getDiagonal(double lad) {
+        diagonal=CalcDiag(lad);
+        return diagonal;
+    }
+
+    private double CalcArea(double lad){
         return Math.pow(lad,2);
     }
 
-    public double CalcPEr(double lad){
+    private double CalcPer(double lad){
         return lad+lad+lad+lad;
     }
-    public double CalcDiag(double lad){
+    private double CalcDiag(double lad){
         return lad*Math.sqrt(2);
     }
 }
