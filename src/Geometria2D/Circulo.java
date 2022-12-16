@@ -11,18 +11,15 @@ public class Circulo {
     }
 
     public double getArea(double rad) {
-        area=CalcArea(rad);
-        return area;
+        return area=CalcArea(rad);
     }
 
     public double getPerimetro(double rad) {
-        perimetro=CalcPer(rad);
-        return perimetro;
+        return perimetro=CalcPer(rad);
     }
 
     public double getDiametro(double rad) {
-        diametro=CalDiam(rad);
-        return diametro;
+        return diametro=CalDiam(rad);
     }
 
     private double CalcArea(double rad){

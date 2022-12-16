@@ -10,18 +10,15 @@ public class Triangulo {
     }
 
     public double getArea(double bas, double alt) {
-        area=CalcArea(bas, alt);
-        return area;
+        return area=CalcArea(bas, alt);
     }
 
     public double getPerimetro(double lad1, double lad2, double lad3) {
-        perimetro=CalcPEr(lad1, lad2,lad3);
-        return perimetro;
+        return perimetro=CalcPEr(lad1, lad2,lad3);
     }
 
     public double getHipotenusa(double cat1, double cat2) {
-        hipotenusa=CalcHip(cat1, cat2);
-        return hipotenusa;
+        return hipotenusa=CalcHip(cat1, cat2);
     }
 
     private double CalcArea(double bas, double alt){

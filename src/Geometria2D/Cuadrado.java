@@ -9,18 +9,15 @@ public class Cuadrado {
     }
 
     public double getArea(double lad) {
-        area=CalcArea(lad);
-        return area;
+        return area=CalcArea(lad);
     }
 
     public double getPerimetro(double lad) {
-        perimetro=CalcPer(lad);
-        return perimetro;
+        return perimetro=CalcPer(lad);
     }
 
     public double getDiagonal(double lad) {
-        diagonal=CalcDiag(lad);
-        return diagonal;
+        return diagonal=CalcDiag(lad);
     }
 
     private double CalcArea(double lad){
