@@ -11,6 +11,11 @@ public class Main {
         Geometria2D.Cuadrado cuad= new Geometria2D.Cuadrado();
         Geometria2D.Pentagono pent= new Geometria2D.Pentagono();
         Geometria2D.Hexagono hex=new Geometria2D.Hexagono();
+        Geometria2D.Heptagono hep=new Geometria2D.Heptagono();
+        Geometria2D.Octagono oct=new Geometria2D.Octagono();
+        Geometria2D.Nonagono non=new Geometria2D.Nonagono();
+        Geometria2D.Decagono dec=new Geometria2D.Decagono();
+        Geometria2D.Endecagono endc=new Geometria2D.Endecagono();
         /*Menu del programa*/
          int menuP=1;
          int menu2D=1;
@@ -149,20 +154,134 @@ public class Main {
                                  menuPent=1;
                                  break;
                              case 6:
+                                 while (menuPent!=0){
+                                     System.out.println("***MENU HEPTAGONO***");
+                                     menuPent=menuPentagono();
+                                     switch (menuPent){
+                                         case 1:
+                                             System.out.print("Ingrese un lado: ");
+                                             var1=sc.nextDouble();
+                                             System.out.println("El area es: "+dcf.format(hep.getArea(var1)));
+                                             break;
+                                         case 2:
+                                             System.out.print("Ingrese un lado: ");
+                                             var1=sc.nextDouble();
+                                             System.out.println("El perimtero es: "+dcf.format(hep.getPerimetro(var1)));
+                                             break;
+                                         case 3:
+                                             System.out.print("Ingrese un lado: ");
+                                             var1=sc.nextDouble();
+                                             System.out.println("El apotema es: "+dcf.format(hep.getApotema(var1)));
+                                             break;
+                                     }
+                                 }
+                                 menuPent=1;
                                  break;
                              case 7:
+                                 while (menuPent!=0){
+                                     System.out.println("***MENU OCTAGONO***");
+                                     menuPent=menuPentagono();
+                                     switch (menuPent){
+                                         case 1:
+                                             System.out.print("Ingrese el perimetro: ");
+                                             var1=sc.nextDouble();
+                                             System.out.print("Ingrese el apotema: ");
+                                             var2=sc.nextDouble();
+                                             System.out.println("El area es: "+dcf.format(oct.getArea(var1, var2)));
+                                             break;
+                                         case 2:
+                                             System.out.print("Ingrese un lado: ");
+                                             var1=sc.nextDouble();
+                                             System.out.println("El perimtero es: "+dcf.format(oct.getPerimetro(var1)));
+                                             break;
+                                         case 3:
+                                             System.out.print("Ingrese un lado: ");
+                                             var1=sc.nextDouble();
+                                             System.out.println("El apotema es: "+dcf.format(oct.getApotema(var1)));
+                                             break;
+                                     }
+                                 }
+                                 menuPent=1;
                                  break;
                              case 8:
+                                 while (menuPent!=0){
+                                     System.out.println("***MENU NONAGONO***");
+                                     menuPent=menuPentagono();
+                                     switch (menuPent){
+                                         case 1:
+                                             System.out.print("Ingrese el lad: ");
+                                             var1=sc.nextDouble();
+                                             System.out.println("El area es: "+dcf.format(non.getArea(var1)));
+                                             break;
+                                         case 2:
+                                             System.out.print("Ingrese un lado: ");
+                                             var1=sc.nextDouble();
+                                             System.out.println("El perimtero es: "+dcf.format(non.getPerimetro(var1)));
+                                             break;
+                                         case 3:
+                                             System.out.print("Ingrese un lado: ");
+                                             var1=sc.nextDouble();
+                                             System.out.println("El apotema es: "+dcf.format(non.getApotema(var1)));
+                                             break;
+                                     }
+                                 }
+                                 menuPent=1;
                                  break;
                              case 9:
+                                 while (menuPent!=0){
+                                     System.out.println("***MENU DECAGONO***");
+                                     menuPent=menuPentagono();
+                                     switch (menuPent){
+                                         case 1:
+                                             System.out.print("Ingrese el lado: ");
+                                             var1=sc.nextDouble();
+                                             System.out.println("El area es: "+dcf.format(dec.getArea(var1)));
+                                             break;
+                                         case 2:
+                                             System.out.print("Ingrese un lado: ");
+                                             var1=sc.nextDouble();
+                                             System.out.println("El perimtero es: "+dcf.format(dec.getPerimetro(var1)));
+                                             break;
+                                         case 3:
+                                             System.out.print("Ingrese un lado: ");
+                                             var1=sc.nextDouble();
+                                             System.out.println("El apotema es: "+dcf.format(dec.getApotema(var1)));
+                                             break;
+                                     }
+                                 }
+                                 menuPent=1;
                                  break;
                              case 10:
+                                 while (menuPent!=0){
+                                     System.out.println("***MENU ENDECAGONO***");
+                                     menuPent=menuPentagono();
+                                     switch (menuPent){
+                                         case 1:
+                                             System.out.print("Ingrese el lado: ");
+                                             var1=sc.nextDouble();
+                                             System.out.println("El area es: "+dcf.format(endc.getArea(var1)));
+                                             break;
+                                         case 2:
+                                             System.out.print("Ingrese un lado: ");
+                                             var1=sc.nextDouble();
+                                             System.out.println("El perimtero es: "+dcf.format(endc.getPerimetro(var1)));
+                                             break;
+                                         case 3:
+                                             System.out.print("Ingrese un lado: ");
+                                             var1=sc.nextDouble();
+                                             System.out.println("El apotema es: "+dcf.format(endc.getApotema(var1)));
+                                             break;
+                                     }
+                                 }
+                                 menuPent=1;
                                  break;
                          }
                      }
                      menu2D=1;
                      break;
                  case 2:
+                     /*Aqui pones tu parte infiel!!!
+                     * xD*/
                      break;
              }
          }
@@ -197,12 +316,12 @@ public class Main {
         System.out.println("2. Triangul0");
         System.out.println("3. Cuadrado");
         System.out.println("4. Pentagono");
-        System.out.println("5. ");
-        System.out.println("6. ");
-        System.out.println("7. ");
-        System.out.println("8. ");
-        System.out.println("9. ");
-        System.out.println("10. ");
+        System.out.println("5. Hexagono");
+        System.out.println("6. Heptagono");
+        System.out.println("7. Octagono");
+        System.out.println("8. Nonagono");
+        System.out.println("9. Decagono");
+        System.out.println("10. Endecagono");
         System.out.println("0. Regresar a menu Principal");
         System.out.print("Opcion: ");
         op=sc.nextInt();
