@@ -1,7 +1,4 @@
 package Geometria3D;
-
-import sun.plugin.cache.OldCacheEntry;
-
 public class Octaedro {
     double diag;
     double areaOc;

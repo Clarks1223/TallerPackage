@@ -3,11 +3,11 @@ package Geometria3D;
 public class Esfera {
     double area;
     double volumen;
-    double radio;
+    double diametr;
     public Esfera() {
         area = 0;
         volumen = 0;
-        radio = 0;
+        diametr = 0;
     }
     public double getAreaE(double rad) {
         return area=calcularAreaE(rad);
@@ -17,8 +17,8 @@ public class Esfera {
         return volumen=calcularVolumen(rad);
     }
 
-    public double getRadio(double diam) {
-        return radio=calcularRadio(diam);
+    public double getDiame(double rad) {
+        return diametr=calcularDiame(rad);
     }
 
     private double calcularAreaE (double rad) {
@@ -27,7 +27,7 @@ public class Esfera {
     private double calcularVolumen (double rad) {
         return ((1.3333333)*Math.PI*Math.pow(rad,3));
     }
-    private double calcularRadio (double diam) {
-        return (diam/2);
+    private double calcularDiame (double rad) {
+        return (rad*2);
     }
 }

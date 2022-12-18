@@ -30,6 +30,6 @@ public class Decagono {
         return 10*lad;
     }
     private double calcApot(double lad){
-        return (lad/2)*(Math.sin(72)/Math.sin(18));
+        return (lad/2)*((0.95)/(0.31));
     }
 }

@@ -23,10 +23,10 @@ public class Cubo {
     }
 
     private double calcularArea(double lad) {
-        return (Math.pow(lad,3));
+        return (6*Math.pow(lad,2));
     }
     private double calcularVol(double lad) {
-        return (6*Math.pow(lad,2));
+        return (Math.pow(lad,3));
     }
     private double calcularDgM(double lad) {
         return (lad*Math.sqrt(3));

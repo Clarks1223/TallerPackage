@@ -26,7 +26,7 @@ public class Dodecaedro {
         return (30*lad*apo);
     }
     private double calcAreaCaD(double lad, double apo) {
-        return  (calcAreaTotD(lad, apo)/12);
+        return  ((30*lad*apo)/12);
     }
     private double calcVolD(double lad) {
         return (0.25*(15+7*Math.sqrt(5))*Math.pow(lad,3));

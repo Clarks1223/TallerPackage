@@ -1,4 +1,7 @@
 import Geometria2D.*;
+import Geometria3D.*;
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
@@ -16,10 +19,22 @@ public class Main {
         Geometria2D.Nonagono non=new Geometria2D.Nonagono();
         Geometria2D.Decagono dec=new Geometria2D.Decagono();
         Geometria2D.Endecagono endc=new Geometria2D.Endecagono();
+        /*Figuras 3D*/
+        Geometria3D.Esfera esf = new Geometria3D.Esfera();
+        Geometria3D.Cilindro cil = new Geometria3D.Cilindro();
+        Geometria3D.Cubo cubo = new Geometria3D.Cubo();
+        Geometria3D.Cono con = new Geometria3D.Cono();
+        Geometria3D.PiramideCuadrangular pir = new Geometria3D.PiramideCuadrangular();
+        Geometria3D.Prisma pr = new Geometria3D.Prisma();
+        Geometria3D.Icosaedro ico = new Geometria3D.Icosaedro();
+        Geometria3D.Tetraedro tet = new Geometria3D.Tetraedro();
+        Geometria3D.Octaedro octr = new Geometria3D.Octaedro();
+        Geometria3D.Dodecaedro dod = new Geometria3D.Dodecaedro();
         /*Menu del programa*/
          int menuP=1;
          int menu2D=1;
          int menuCir=1, menuTri=1, menuCuad=1, menuPent=1;
+         int menu3D = -1, opFigu = -1;
          double var1, var2, var3;
          while (menuP!=0){
              menuP=menuPrincipal();
@@ -280,8 +295,312 @@ public class Main {
                      menu2D=1;
                      break;
                  case 2:
-                     /*Aqui pones tu parte infiel!!!
-                     * xD*/
+                     while (menu3D!=0) {
+                         menu3D = menuFiguras3D();
+                         switch (menu3D) {
+                             case 1:
+                                 while (opFigu!=0) {
+                                     System.out.println("***MENU ESFERA***");
+                                     opFigu = menuEsfera();
+                                     switch (opFigu) {
+                                         case 1:
+                                             System.out.println("AREA");
+                                             System.out.print("Ingrese el radio: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.println("Area -> "+dcf.format(esf.getAreaE(var1)));
+                                             break;
+                                         case 2:
+                                             System.out.println("VOLUMEN");
+                                             System.out.print("Ingrese el radio: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.println("Volumen -> "+dcf.format(esf.getVolumen(var1)));
+                                             break;
+                                         case 3:
+                                             System.out.println("DIAMETRO");
+                                             System.out.print("Ingrese el radio: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.println("Diametro -> "+dcf.format(esf.getDiame(var1)));
+                                             break;
+                                     }
+                                 }
+                                 opFigu=1;
+                                 break;
+                             case 2:
+                                 while (opFigu!=0) {
+                                     System.out.println("***MENU CILINDRO***");
+                                     opFigu = menuIcosaedro();
+                                     switch (opFigu) {
+                                         case 1:
+                                             System.out.println("AREA LATERAL");
+                                             System.out.print("Ingrese el radio: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.print("Ingrese la altura: ");
+                                             var2 = sc.nextDouble();
+                                             System.out.println("Area lateral -> "+dcf.format(cil.getAreaLateral(var1,var2)));
+                                             break;
+                                         case 2:
+                                             System.out.println("AREA TOTAL");
+                                             System.out.print("Ingrese el radio: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.print("Ingrese la altura: ");
+                                             var2 = sc.nextDouble();
+                                             System.out.println("Area total -> "+dcf.format(cil.getAreaTotal(var1,var2)));
+                                             break;
+                                         case 3:
+                                             System.out.println("VOLUMEN");
+                                             System.out.print("Ingrese el radio: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.print("Ingrese la altura: ");
+                                             var2 = sc.nextDouble();
+                                             System.out.println("Area lateral -> "+dcf.format(cil.getVolumen(var1,var2)));
+                                             break;
+                                     }
+                                 }
+                                 opFigu=1;
+                                 break;
+                             case 3:
+                                while (opFigu!=0) {
+                                    System.out.println("***MENU CUBO***");
+                                    opFigu = menuCubo();
+                                    switch (opFigu) {
+                                        case 1:
+                                            System.out.println("AREA");
+                                            System.out.print("Ingrese el lado: ");
+                                            var1 = sc.nextDouble();
+                                            System.out.println("Area -> "+dcf.format(cubo.getAreaC(var1)));
+                                            break;
+                                        case 2:
+                                            System.out.println("VOLUMEN");
+                                            System.out.print("Ingrese el lado: ");
+                                            var1 = sc.nextDouble();
+                                            System.out.println("Volumen -> "+dcf.format(cubo.getVolumen(var1)));
+                                            break;
+                                        case 3:
+                                            System.out.println("Diagonal Mayor");
+                                            System.out.print("Ingrese el lado: ");
+                                            var1 = sc.nextDouble();
+                                            System.out.println("Diagonal mayor -> "+dcf.format(cubo.getDiagonalMayor(var1)));
+                                            break;
+                                    }
+                                }
+                                 opFigu=1;
+                                 break;
+                             case 4:
+                                 while (opFigu!=0) {
+                                     System.out.println("***MENU CONO***");
+                                     opFigu = menuIcosaedro();
+                                     switch (opFigu) {
+                                         case 1:
+                                             System.out.println("AREA LATERAL");
+                                             System.out.print("Ingrese el radio: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.print("Ingrese la generatriz: ");
+                                             var2 = sc.nextDouble();
+                                             System.out.println("Area lateral -> "+dcf.format(con.getAreaLateral(var1,var2)));
+                                             break;
+                                         case 2:
+                                             System.out.println("AREA TOTAL");
+                                             System.out.print("Ingrese el radio: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.print("Ingrese la generatriz: ");
+                                             var2 = sc.nextDouble();
+                                             System.out.println("Area total -> "+dcf.format(con.getAreaTotal(var1,var2)));
+                                             break;
+                                         case 3:
+                                             System.out.println("VOLUMEN");
+                                             System.out.print("Ingrese el radio: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.print("Ingrese la altura: ");
+                                             var2 = sc.nextDouble();
+                                             System.out.println("Volumen -> "+dcf.format(con.getVolumen(var1,var2)));
+                                             break;
+                                     }
+                                 }
+                                 opFigu=1;
+                                 break;
+                             case 5:
+                                 while(opFigu!=0) {
+                                     System.out.println("***MENU PIRAMIDE***");
+                                     opFigu = menuPiramide();
+                                     switch (opFigu) {
+                                         case 1:
+                                             System.out.println("AREA LATERAL");
+                                             System.out.print("Ingrese la base: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.print("Ingrese la altura: ");
+                                             var2 = sc.nextDouble();
+                                             System.out.println("Area lateral -> "+dcf.format(pir.getAreaCLatPC(var1,var2)));
+                                             break;
+                                         case 2:
+                                             System.out.println("AREA BASE");
+                                             System.out.print("Ingrese la base: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.println("Area base -> "+dcf.format(pir.getAreaBasPC(var1)));
+                                             break;
+                                         case 3:
+                                             System.out.println("VOLUMEN");
+                                             System.out.print("Ingrese la base: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.print("Ingrese la altura: ");
+                                             var2 = sc.nextDouble();
+                                             System.out.println("Volumen -> "+dcf.format(pir.getVoluPC(var1,var2)));
+                                             break;
+                                     }
+                                 }
+                                 opFigu=1;
+                                 break;
+                             case 6:
+                                 while(opFigu!=0) {
+                                     System.out.println("***MENU PRISMA***");
+                                     opFigu = menuIcosaedro();
+                                     switch (opFigu) {
+                                         case 1:
+                                             System.out.println("AREA LATERAL");
+                                             System.out.print("Ingrese el lado: ");
+                                             var1= sc.nextDouble();
+                                             System.out.print("Ingrese la base: ");
+                                             var2 = sc.nextDouble();
+                                             System.out.print("Ingrese la altura: ");
+                                             var3 = sc.nextDouble();
+                                             System.out.println("Area lateral: "+dcf.format(pr.getAreaL(var1,var2,var3)));
+                                             break;
+                                         case 2:
+                                             System.out.println("AREA TOTAL");
+                                             System.out.print("Ingrese el lado: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.print("Ingrese la base: ");
+                                             var2 = sc.nextDouble();
+                                             System.out.print("Ingrese la altura: ");
+                                             var3 = sc.nextDouble();
+                                             System.out.println("Area totañ -> "+dcf.format(pr.getAreaT(var1,var2,var3)));
+                                             break;
+                                         case 3:
+                                             System.out.println("VOLUMEN");
+                                             System.out.print("Ingrese el lado: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.print("Ingrese la base: ");
+                                             var2 = sc.nextDouble();
+                                             System.out.print("Ingrese la altura: ");
+                                             var3 = sc.nextDouble();
+                                             System.out.println("Volumen -> "+dcf.format(pr.getVolP(var1,var2,var3)));
+                                             break;
+                                     }
+                                 }
+                                 opFigu=1;
+                                 break;
+                             case 7:
+                                 while(opFigu!=0) {
+                                     System.out.println("***MENU ICOSAEDRO***");
+                                     opFigu = menuIcosaedro();
+                                     switch (opFigu) {
+                                         case 1:
+                                             System.out.println("AREA LATERAL");
+                                             System.out.print("Ingrese el lado: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.println("Area lateral -> "+dcf.format(ico.getAreaCara(var1)));
+                                             break;
+                                         case 2:
+                                             System.out.println("AREA TOTAL");
+                                             System.out.print("Ingrese el lado: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.println("Area total -> "+dcf.format(ico.getAreaTotIco(var1)));
+                                             break;
+                                         case 3:
+                                             System.out.println("VOLUMEN");
+                                             System.out.print("Ingrese el lado: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.println("Volumen -> "+dcf.format(ico.getVolIco(var1)));
+                                             break;
+                                     }
+                                 }
+                                 opFigu=1;
+                                 break;
+                             case 8:
+                                 while (opFigu!=0) {
+                                     System.out.println("***MENU TETREADRO***");
+                                     opFigu = menuTetraedro();
+                                     switch (opFigu) {
+                                         case 1:
+                                             System.out.println("ALTURA");
+                                             System.out.print("Ingrese el lado: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.println("Altura -> "+dcf.format(tet.getAlt(var1)));
+                                             break;
+                                         case 2:
+                                             System.out.println("AREA TOTAL");
+                                             System.out.print("Ingrese el lado: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.println("Area total -> "+dcf.format(tet.getAreaTe(var1)));
+                                             break;
+                                         case 3:
+                                             System.out.println("VOLUMEN");
+                                             System.out.print("Ingrese el lado: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.println("Volumen -> "+dcf.format(tet.getVolTe(var1)));
+                                             break;
+                                     }
+                                 }
+                                 opFigu=1;
+                                 break;
+                             case 9:
+                                 while (opFigu!=0) {
+                                     System.out.println("***MENU OCTAEDRO***");
+                                     opFigu = menuCubo();
+                                     switch (opFigu) {
+                                         case 1:
+                                             System.out.println("AREA");
+                                             System.out.print("Ingrese el lado: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.println("Area -> "+dcf.format(octr.getAreaOc(var1)));
+                                             break;
+                                         case 2:
+                                             System.out.println("VOLUMEN");
+                                             System.out.print("Ingrese el lado: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.println("Volumen -> "+dcf.format(octr.getVoluOc(var1)));
+                                             break;
+                                         case 3:
+                                             System.out.println("DIAGONAL");
+                                             System.out.print("Ingrese el lado: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.println("Diagonal -> "+dcf.format(octr.getDiag(var1)));
+                                             break;
+                                     }
+                                 }
+                                 opFigu=1;
+                                 break;
+                             case 10:
+                                 while (opFigu!=0) {
+                                     opFigu = menuIcosaedro();
+                                     switch (opFigu) {
+                                         case 1:
+                                             System.out.println("AREA LATERAL");
+                                             System.out.print("Ingrese el lado: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.print("Ingrese el apotema: ");
+                                             var2 = sc.nextDouble();
+                                             System.out.println("Area lateral -> "+dcf.format(dod.getArea_latD(var1,var2)));
+                                             break;
+                                         case 2:
+                                             System.out.println("AREA TOTAL");
+                                             System.out.print("Ingrese el lado: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.print("Ingrese el apotema: ");
+                                             var2 = sc.nextDouble();
+                                             System.out.println("Area total -> "+dcf.format(dod.getArea_totD(var1,var2)));
+                                             break;
+                                         case 3:
+                                             System.out.println("VOLUMEN");
+                                             System.out.print("Ingrese el lado: ");
+                                             var1 = sc.nextDouble();
+                                             System.out.println("Volumen -> "+dcf.format(dod.getVoluDod(var1)));
+                                             break;
+                                     }
+                                 }
+                                 opFigu=1;
+                                 break;
+                         }
+                     }
                      break;
              }
          }
@@ -379,5 +698,82 @@ public class Main {
         op=controlDatos(op);
         return op;
     }
-
+    static int menuFiguras3D(){
+        int op;
+        System.out.println("***MENU FIGURAS 3D***");
+        System.out.println("1. Esfera");
+        System.out.println("2. Cilindro");
+        System.out.println("3. Cubo");
+        System.out.println("4. Cono");
+        System.out.println("5. Piramide cuadrangular");
+        System.out.println("6. Prisma");
+        System.out.println("7. Icosaedrp");
+        System.out.println("8. Tetraedro");
+        System.out.println("9. Octaedro");
+        System.out.println("10. Dodecaedro");
+        System.out.println("0. Regresar al menu Principal");
+        System.out.print("Opcion: ");
+        op=sc.nextInt();
+        while (op<0||op>10){
+            System.out.println("Dato incorrecto");
+            System.out.print("Opcion: ");
+            op=sc.nextInt();
+        }
+        return op;
+    }
+    static int menuCubo(){
+        int op;
+        System.out.println("1. Calcular area");
+        System.out.println("2. Calcular volumen");
+        System.out.println("3. Calcular diagonal mayor");
+        System.out.println("0. Regresar a menu FIGURAS 3D");
+        System.out.print("Opcion: ");
+        op=sc.nextInt();
+        op=controlDatos(op);
+        return op;
+    }
+    static int menuIcosaedro(){
+        int op;
+        System.out.println("1. Calcular area lateral");
+        System.out.println("2. Calcular area total");
+        System.out.println("3. Calcular volumen");
+        System.out.println("0. Regresar a menu FIGURAS 3D");
+        System.out.print("Opcion: ");
+        op=sc.nextInt();
+        op=controlDatos(op);
+        return op;
+    }
+    static int menuEsfera(){
+        int op;
+        System.out.println("1. Calcular area");
+        System.out.println("2. Calcular volumen");
+        System.out.println("3. Calcular radio");
+        System.out.println("0. Regresar a menu FIGURAS 3D");
+        System.out.print("Opcion: ");
+        op=sc.nextInt();
+        op=controlDatos(op);
+        return op;
+    }
+    static int menuPiramide(){
+        int op;
+        System.out.println("1. Calcular area base");
+        System.out.println("2. Calcular area lateral");
+        System.out.println("3. Calcular volumen");
+        System.out.println("0. Regresar a menu FIGURAS 3D");
+        System.out.print("Opcion: ");
+        op=sc.nextInt();
+        op=controlDatos(op);
+        return op;
+    }
+    static int menuTetraedro(){
+        int op;
+        System.out.println("1. Calcular altura");
+        System.out.println("2. Calcular area total");
+        System.out.println("3. Calcular volumen");
+        System.out.println("0. Regresar a menu FIGURAS 3D");
+        System.out.print("Opcion: ");
+        op=sc.nextInt();
+        op=controlDatos(op);
+        return op;
+    }
 }

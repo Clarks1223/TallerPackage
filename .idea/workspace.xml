@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="028a7bbb-1d24-4b7f-a7b3-b214e552a730" name="Changes" comment="Add class octagono">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="028a7bbb-1d24-4b7f-a7b3-b214e552a730" name="Changes" comment="Clases de Geometria3D">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Geometria3D/Cilindro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria3D/Cilindro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Geometria3D/Cono.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria3D/Cono.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Geometria3D/Cubo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria3D/Cubo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Geometria3D/Decaedro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria3D/Dodecaedro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Geometria3D/Dodecaedro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria3D/Dodecaedro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Geometria3D/Esfera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria3D/Esfera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Geometria3D/Heptaedro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria3D/Icosaedro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Geometria3D/Octaedro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria3D/Octaedro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Geometria3D/Piramide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria3D/PiramideCuadrangular.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Geometria3D/Prisma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria3D/Prisma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Geometria3D/Tetraedro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometria3D/Tetraedro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671161649228</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Clases de Geometria3D">
+      <created>1671310977847</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671310977847</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +140,7 @@
     <MESSAGE value="add main Scanner and DecimalFormat" />
     <MESSAGE value="add main 3 opciones menu principal, 11 opciones menu figurasgeometricas2D y 4 opciones por cada figura geometrica" />
     <MESSAGE value="Add class octagono" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add class octagono" />
+    <MESSAGE value="Clases de Geometria3D" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clases de Geometria3D" />
   </component>
 </project>
